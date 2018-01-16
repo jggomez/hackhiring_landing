@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no" />
     <meta name="theme-color" content="#2196F3">
     <title>HACKHIRING</title>
-
     <!-- CSS  -->
     <link rel="icon" href="img/logo.ico">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -18,23 +17,19 @@
 </head>
 
 <body id="top" class="scrollspy">
-
     <!-- Pre Loader -->
     <div id="loader-wrapper">
         <div id="loader"></div>
         <div class="loader-section section-left"></div>
         <div class="loader-section section-right"></div>
-
     </div>
     <!--Intro and service-->
     <section class="section scrollspy" id="about">
         <div class="parallax-container">
-
             <div class="row">
                 <!-- <h1 class="header text_color deep-orange-text text-darken-1 center" style="font-family:'Kaushan Script','Helvetica Neue',Helvetica,Arial,cursive;"><b>HACKHIRING</b></h1> -->
                 <div class="col s12 center">
                     <img height="300" src="img/hackhiring.png">
-
                 </div>
                 <div class="col s12 center">
                     <h5 class="header white-text col s12 ">
@@ -54,16 +49,16 @@
                 <p class="center">Por favor, complete este formulario para ayudarnos a evaluar mejor sus necesidades.</p>
                 <div class="row">
                     <label>¿Qué tan pronto necesita contratar desarrolladores adicionales?</label>
-                    <select class="browser-default" id="select1">
+                    <select class="browser-default" id="selectTime">
                         <option value="" disabled selected>Seleccione una opción</option>
                         <option value="thisMonth">En el próximo mes</option>
                         <option value="2Months">Dentro de los próximos 1-2 meses</option>
                         <option value="3Months">Dentro de los próximos 2+ meses</option>
                     </select>
                 </div>
-                <div class="row" >
+                <div class="row">
                     <label>¿En qué tecnologías estás buscando soporte?</label>
-                    <select class="browser-default" id="select2">
+                    <select class="browser-default" id="selectTechnology">
                         <option value="" disabled selected>Seleccione una opción</option>
                         <option value="Ruby">Ruby / Ruby on Rails</option>
                         <option value="Phyton">Python / Django</option>
@@ -111,7 +106,6 @@
                     <label>¿Dónde están ubicados?</label>
                     <select class="browser-default" id="select5">
                         <option value="" disabled selected>Seleccione una opción</option>
-
                         <option value="United States" data-reactid=".hbspt-forms-0.0:$5.$country.$country.0.1:$United States">
                             <font style="vertical-align: inherit;">
                                 <font style="vertical-align: inherit;">Estados Unidos</font>
@@ -666,70 +660,70 @@
                         </option>
                     </select>
                 </div>
-                <div ><form class="col s12">
-                    <div class="row">
-                        <div class="input-field col s12">
-                            <input id="name" type="text" class="validate">
-                            <label for="name" data-error="wrong"  >Nombres</label>
+                <div>
+                    <form class="col s12">
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <input id="name" type="text" class="validate">
+                                <label for="name" data-error="wrong">Nombres</label>
+                            </div>
                         </div>
-                    </div>
-                </form>
-                <form class="col s12">
-                    <div class="row">
-                        <div class="input-field col s12">
-                            <input id="lastname" type="text" class="validate">
-                            <label for="lastname" data-error="wrong"  >Apellidos</label>
+                    </form>
+                    <form class="col s12">
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <input id="lastname" type="text" class="validate">
+                                <label for="lastname" data-error="wrong">Apellidos</label>
+                            </div>
                         </div>
-                    </div>
-                </form>
-                <form class="col s12">
-                    <div class="row">
-                        <div class="input-field col s12">
-                            <input id="email" type="email" class="validate">
-                            <label for="email" data-error="wrong"  >Email</label>
+                    </form>
+                    <form class="col s12">
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <input id="email" type="email" class="validate">
+                                <label for="email" data-error="wrong">Email</label>
+                            </div>
                         </div>
-                    </div>
-                </form>
-                <form class="col s12">
-                    <div class="row">
-                        <div class="input-field col s12">
-                            <input id="wichTecnology" type="text" class="validate">
-                            <label for="wichTecnology" data-error="wrong"  >¿Que tecnologías debe ser hábil el desarrollador?</label>
+                    </form>
+                    <form class="col s12">
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <input id="wichTecnology" type="text" class="validate">
+                                <label for="wichTecnology" data-error="wrong">¿Que tecnologías debe ser hábil el desarrollador?</label>
+                            </div>
                         </div>
-                    </div>
-                </form>
-                <form class="col s12">
-                    <div class="row">
-                        <div class="input-field col s12">
-                            <input id="company" type="text" class="validate">
-                            <label for="company" data-error="wrong"  >Empresa</label>
+                    </form>
+                    <form class="col s12">
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <input id="company" type="text" class="validate">
+                                <label for="company" data-error="wrong">Empresa</label>
+                            </div>
                         </div>
-                    </div>
-                </form>
-                <form class="col s12">
-                    <div class="row">
-                        <div class="input-field col s12">
-                            <input id="needs" type="text" class="validate">
-                            <label for="needs" data-error="wrong"  >¿Hay algo más que nos ayude a entender tus necesidades?</label>
+                    </form>
+                    <form class="col s12">
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <input id="needs" type="text" class="validate">
+                                <label for="needs" data-error="wrong">¿Hay algo más que nos ayude a entender tus necesidades?</label>
+                            </div>
                         </div>
-                    </div>
-                </form>
-                <form class="col s12">
-                    <div class="row">
-                        <div class="input-field col s12">
-                            <input id="salary" type="text" class="validate">
-                            <label for="salary" data-error="wrong"  >¿Cual es el rango de salario a pagar del desarollador?</label>
+                    </form>
+                    <form class="col s12">
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <input id="salary" type="text" class="validate">
+                                <label for="salary" data-error="wrong">¿Cual es el rango de salario a pagar del desarollador?</label>
+                            </div>
                         </div>
-                    </div>
-                </form></div>
-                
+                    </form>
+                </div>
                 <div class="center">
-                        <button id="sendInformationButton" class="btn " type="submit">Envíar su solicitud</button>
+                    <button id="sendInformationButton" class="btn " type="submit">Envíar su solicitud</button>
                 </div>
             </div>
         </div>
     </section>
-
     <!--Footer-->
     <footer id="contact" style="background-color: #26a69a" class="page-footer scrollspy">
         <div class="container">
@@ -757,12 +751,14 @@
             </div>
         </div>
     </footer>
-
-
     <!--  Scripts-->
     <script src="min/plugin-min.js"></script>
     <script src="min/custom-min.js"></script>
-
+    <script src="https://www.gstatic.com/firebasejs/4.8.2/firebase.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="js/configFirebase.js"></script>
+    <script src="js/register_request/requestDeveloper.js"></script>
+    <script src="js/register_request/register.js"></script>
 </body>
 
 </html>

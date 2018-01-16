@@ -54,42 +54,42 @@
                 <p class="center">Por favor, complete este formulario para ayudarnos a evaluar mejor sus necesidades.</p>
                 <div class="row">
                     <label>¿Qué tan pronto necesita contratar desarrolladores adicionales?</label>
-                    <select class="browser-default">
+                    <select class="browser-default" id="select1">
                         <option value="" disabled selected>Seleccione una opción</option>
-                        <option value="1">En el próximo mes</option>
-                        <option value="2">Dentro de los próximos 1-2 meses</option>
-                        <option value="3">Dentro de los próximos 2+ meses</option>
+                        <option value="thisMonth">En el próximo mes</option>
+                        <option value="2Months">Dentro de los próximos 1-2 meses</option>
+                        <option value="3Months">Dentro de los próximos 2+ meses</option>
                     </select>
                 </div>
-                <div class="row">
+                <div class="row" >
                     <label>¿En qué tecnologías estás buscando soporte?</label>
-                    <select class="browser-default">
+                    <select class="browser-default" id="select2">
                         <option value="" disabled selected>Seleccione una opción</option>
-                        <option value="1">Ruby / Ruby on Rails</option>
-                        <option value="2">Python / Django</option>
-                        <option value="3">PHP / Laravel</option>
-                        <option value="4">JS / Angular / React</option>
-                        <option value="5">Android / Java</option>
-                        <option value="6">iOS / Swift</option>
-                        <option value="7">DevOps</option>
-                        <option value="8">Control de calidad</option>
-                        <option value="9">Otro</option>
-                        <option value="10">Desconocido</option>
+                        <option value="Ruby">Ruby / Ruby on Rails</option>
+                        <option value="Phyton">Python / Django</option>
+                        <option value="Php">PHP / Laravel</option>
+                        <option value="JS">JS / Angular / React</option>
+                        <option value="Android">Android / Java</option>
+                        <option value="Ios">iOS / Swift</option>
+                        <option value="Devops">DevOps</option>
+                        <option value="Quality">Control de calidad</option>
+                        <option value="Other">Otro</option>
+                        <option value="Unknown">Desconocido</option>
                     </select>
                 </div>
                 <div class="row">
                     <label>¿Qué tipo de recurso estás buscando?</label>
-                    <select class="browser-default">
+                    <select class="browser-default" id="select3">
                         <option value="" disabled selected>Seleccione una opción</option>
-                        <option value="1">Tiempo completo</option>
-                        <option value="2">Proyecto basado</option>
-                        <option value="3">Ambos </option>
-                        <option value="4">No estoy seguro</option>
+                        <option value="Full">Tiempo completo</option>
+                        <option value="Proyect">Proyecto basado</option>
+                        <option value="Both">Ambos </option>
+                        <option value="Idontknow">No estoy seguro</option>
                     </select>
                 </div>
                 <div class="row">
                     <label>¿Cuál es el tamaño de su equipo de ingeniería?</label>
-                    <select class="browser-default">
+                    <select class="browser-default" id="select4">
                         <option value="" disabled selected>Seleccione una opción</option>
                         <option value="1">0-10</option>
                         <option value="2">11-50</option>
@@ -99,17 +99,17 @@
                 </div>
                 <div class="row">
                     <label>¿Está su equipo distribuido actualmente (miembros del equipo en más de una ubicación)?</label>
-                    <select class="browser-default">
+                    <select class="browser-default" id="select4">
                         <option value="" disabled selected>Seleccione una opción</option>
-                        <option value="1">Sí</option>
-                        <option value="2">No, pero contratando activamente a distancia</option>
-                        <option value="3">No, pero es curioso saber más</option>
-                        <option value="3">No, escéptico de que los trabajos remotos</option>
+                        <option value="yes">Sí</option>
+                        <option value="activelyHiring">No, pero contratando activamente a distancia</option>
+                        <option value="curious">No, pero es curioso saber más</option>
+                        <option value="skeptical">No, escéptico de que los trabajos remotos</option>
                     </select>
                 </div>
                 <div class="row">
                     <label>¿Dónde están ubicados?</label>
-                    <select class="browser-default">
+                    <select class="browser-default" id="select5">
                         <option value="" disabled selected>Seleccione una opción</option>
 
                         <option value="United States" data-reactid=".hbspt-forms-0.0:$5.$country.$country.0.1:$United States">
@@ -677,8 +677,8 @@
                 <form class="col s12">
                     <div class="row">
                         <div class="input-field col s12">
-                            <input id="name" type="text" class="validate">
-                            <label for="name" data-error="wrong"  >Apellidos</label>
+                            <input id="lastname" type="text" class="validate">
+                            <label for="lastname" data-error="wrong"  >Apellidos</label>
                         </div>
                     </div>
                 </form>
@@ -693,38 +693,38 @@
                 <form class="col s12">
                     <div class="row">
                         <div class="input-field col s12">
-                            <input id="name" type="text" class="validate">
-                            <label for="name" data-error="wrong"  >¿Que tecnologías debe ser hábil el desarrollador?</label>
+                            <input id="wichTecnology" type="text" class="validate">
+                            <label for="wichTecnology" data-error="wrong"  >¿Que tecnologías debe ser hábil el desarrollador?</label>
                         </div>
                     </div>
                 </form>
                 <form class="col s12">
                     <div class="row">
                         <div class="input-field col s12">
-                            <input id="name" type="text" class="validate">
-                            <label for="name" data-error="wrong"  >Empresa</label>
+                            <input id="company" type="text" class="validate">
+                            <label for="company" data-error="wrong"  >Empresa</label>
                         </div>
                     </div>
                 </form>
                 <form class="col s12">
                     <div class="row">
                         <div class="input-field col s12">
-                            <input id="name" type="text" class="validate">
-                            <label for="name" data-error="wrong"  >¿Hay algo más que nos ayude a entender tus necesidades?</label>
+                            <input id="needs" type="text" class="validate">
+                            <label for="needs" data-error="wrong"  >¿Hay algo más que nos ayude a entender tus necesidades?</label>
                         </div>
                     </div>
                 </form>
                 <form class="col s12">
                     <div class="row">
                         <div class="input-field col s12">
-                            <input id="name" type="text" class="validate">
-                            <label for="name" data-error="wrong"  >¿Cual es el rango de salario a pagar del desarollador?</label>
+                            <input id="salary" type="text" class="validate">
+                            <label for="salary" data-error="wrong"  >¿Cual es el rango de salario a pagar del desarollador?</label>
                         </div>
                     </div>
                 </form></div>
                 
                 <div class="center">
-                    <a class="waves-effect waves-light btn  ">Envíar su solicitud</a>
+                        <button id="sendInformationButton" class="btn " type="submit">Envíar su solicitud</button>
                 </div>
             </div>
         </div>

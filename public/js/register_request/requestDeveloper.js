@@ -5,7 +5,7 @@ class RequestDeveloper {
     }
 
     save(developer) {
-        this.dbFirebase.ref("registerDeveloper").set(developer);
+        this.dbFirebase.ref("registerDeveloper").push().set(developer);
     }
 
 

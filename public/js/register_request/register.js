@@ -18,30 +18,24 @@ $(() => {
         let needs = $("#needs").val();
         let salary = $("#salary").val();
         let benefits = $("#benefits").val();
+            let requestDev = new RequestDeveloper();
 
-        let requestDev = new RequestDeveloper();
-
-        requestDev.save({
-            time,
-            technologyDev,
-            resource,
-            nemployees,
-            size,
-            ubication,
-            country,
-            name,
-            lastname,
-            email,
-            company,
-            wichTecnology,
-            needs,
-            salary,
-            benefits
-        });
-
-
-    }
-
-
-
+            requestDev.save({
+                time,
+                technologyDev,
+                resource,
+                nemployees,
+                size,
+                ubication,
+                country,
+                name,
+                lastname,
+                email,
+                company,
+                wichTecnology,
+                needs,
+                salary,
+                benefits
+            });
+        }
 });

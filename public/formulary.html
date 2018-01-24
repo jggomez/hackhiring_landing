@@ -47,177 +47,176 @@
             <h3 class="header deep-orange-text text-darken-1 center">¡Queremos conocer tu solicitud! Nuestro equipo estará en contacto.</h3>
             <div class="row bigtext">
                 <p class="center">Por favor, complete este formulario para ayudarnos a evaluar mejor sus necesidades.</p>
-                <div class="row">
-                    <label>¿Qué tan pronto necesita contratar un desarrollador? </label>
-                    <select class="browser-default" id="selectTime">
-                        <option value="" disabled selected>Seleccione una opción</option>
-                        <option value="Urgente, en este mes">Urgente, en este mes.</option>
-                        <option value="En el próximo mes">En el próximo mes.</option>
-                        <option value="Dentro de los próximos 1-2 meses">Dentro de los próximos 1-2 meses.</option>
-                        <option value="Dentro de los próximos 2+ meses">Dentro de los próximos 2+ meses.</option>
-                    </select>
-                </div>
-                <div class="row">
-                    <label>¿En qué tecnologías específicas estás buscando desarrollador? </label>
-                    <select class="browser-default" id="selectTechnology">
-                        <option value="" disabled selected>Seleccione una opción</option>
-                        <option value="Ruby / Ruby on Rails">Ruby / Ruby on Rails</option>
-                        <option value="Python">Python</option>
-                        <option value="Python / Django">Python / Django</option>
-                        <option value="PHP">PHP </option>
-                        <option value="PHP / Laravel">PHP / Laravel</option>
-                        <option value="Angular">Angular</option>
-                        <option value="Angular / React">Angular / React</option>
-                        <option value="Java">Java</option>
-                        <option value="JavaEE">JavaEE</option>
-                        <option value="Android / Java">Android / Java</option>
-                        <option value="iOS / Swift">iOS / Swift</option>
-                        <option value="DevOps">DevOps</option>
-                        <option value="NodeJS">NodeJS</option>
-                        <option value="Aseguramiento de calidad">Aseguramiento de calidad</option>
-                        <option value="Otro">Otro</option>
-                    </select>
-                </div>
-                <div class="row">
-                    <label>¿Qué tipo de recurso estás buscando?</label>
-                    <select class="browser-default" id="selectResource">
-                        <option value="" disabled selected>Seleccione una opción</option>
-                        <option value="Tiempo completo">Tiempo completo.</option>
-                        <option value="Proyecto puntual">Proyecto puntual.</option>
-                        <option value="Ambos">Ambos.</option>
-                    </select>
-                </div>
-                <div class="row">
-                    <label>¿Con cuantos empleados cuenta tu empresa?</label>
-                    <select class="browser-default" id="selectNemployees">
-                        <option value="" disabled selected>Seleccione una opción</option>
-                        <option value="0-10">0-10</option>
-                        <option value="11-50">11-50</option>
-                        <option value="51-100">51-100</option>
-                        <option value="100+">100+</option>
-                    </select>
-                </div>
-                <div class="row">
-                    <label>Si cuentas con un equipo de ingeniería actual, ¿Cuál es el tamaño de su equipo de ingeniería? </label>
-                    <select class="browser-default" id="selectSize">
-                        <option value="" disabled selected>Seleccione una opción</option>
-                        <option value="0-10">0-10</option>
-                        <option value="11-50">11-50</option>
-                        <option value="51-100">51-100</option>
-                        <option value="100+">100+</option>
-                    </select>
-                </div>
-                <div class="row">
-                    <label>¿Trabajan miembros del equipo en más de una ubicación?</label>
-                    <select class="browser-default" id="selectUbication">
-                        <option value="" disabled selected>Seleccione una opción</option>
-                        <option value="Sí">Sí</option>
-                        <option value="No, pero contratando activamente a distancia">No, pero contratando activamente a distancia</option>
-                        <option value="No, pero es curioso saber más">No, pero es curioso saber más</option>
-                        <option value="No, escéptico de que los trabajos remotos">No, escéptico de que los trabajos remotos</option>
-                    </select>
-                </div>
-                <div class="row">
-                    <label>¿Dónde están ubicados?</label>
-                    <select class="browser-default" id="selectCountry">
-                        <option value="" disabled selected>Seleccione una opción</option>
-                        <option value="Argentina">Argentina</option>
-                        <option value="España">España</option>
-                        <option value="México">México</option>
-                        <option value="Guatemala">Guatemala</option>
-                        <option value="Honduras">Honduras</option>
-                        <option value="El Salvador">El Salvador</option>
-                        <option value="Venezuela">Venezuela</option>
-                        <option value="Colombia">Colombia</option>
-                        <option value="Cuba">Cuba</option>
-                        <option value="Bolivia">Bolivia</option>
-                        <option value="Perú">Perú</option>
-                        <option value="Ecuador">Ecuador</option>
-                        <option value="Paraguay">Paraguay</option>
-                        <option value="Uruguay">Uruguay</option>
-                        <option value="Chile">Chile</option>
-                        <option value="España">España</option>
-                        <option value="Francia">Francia</option>
-                        <option value="Italia">Italia</option>
-                        <option value="Suiza">Suiza</option>
-                        <option value="Alemania">Alemania</option>
-                        <option value="Holanda">Holanda</option>
-                        <option value="Polonia">Polonia</option>
-                        <option value="Grecia">Grecia</option>
-                    </select>
-                </div>
-                <div>
-                    <form class="col s12">
+                <form class="">
+                    <div class="row">
+                        <label>¿Qué tan pronto necesita contratar un desarrollador? </label>
+                        <select class="browser-default" id="selectTime"  required="" aria-required="true">
+                            <option value="" disabled selected>Seleccione una opción</option>
+                            <option value="Urgente, en este mes">Urgente, en este mes.</option>
+                            <option value="En el próximo mes">En el próximo mes.</option>
+                            <option value="Dentro de los próximos 1-2 meses">Dentro de los próximos 1-2 meses.</option>
+                            <option value="Dentro de los próximos 2+ meses">Dentro de los próximos 2+ meses.</option>
+
+                        </select>
+                    </div>
+                    <div class="row" >
+                        <label>¿En qué tecnologías específicas estás buscando desarrollador? </label>
+                        <select class="browser-default" id="selectTechnology"  required="" aria-required="true">
+                            <option value="" disabled selected>Seleccione una opción</option>
+                            <option value="Ruby / Ruby on Rails">Ruby / Ruby on Rails</option>
+                            <option value="Python">Python</option>
+                            <option value="Python / Django">Python / Django</option>
+                            <option value="PHP">PHP </option>
+                            <option value="PHP / Laravel">PHP / Laravel</option>
+                            <option value="Angular">Angular</option>
+                            <option value="Angular / React">Angular / React</option>
+                            <option value="Java">Java</option>
+                            <option value="JavaEE">JavaEE</option>
+                            <option value="Android / Java">Android / Java</option>
+                            <option value="iOS / Swift">iOS / Swift</option>
+                            <option value="DevOps">DevOps</option>
+                            <option value="NodeJS">NodeJS</option>
+                            <option value="Aseguramiento de calidad">Aseguramiento de calidad</option>
+                            <option value="Otro">Otro</option>
+                        </select>
+                    </div>
+                    <div class="row">
+                        <label>¿Qué tipo de recurso estás buscando?</label>
+                        <select class="browser-default" id="selectResource" required="" aria-required="true">
+                            <option value="" disabled selected>Seleccione una opción</option>
+                            <option value="Tiempo completo">Tiempo completo.</option>
+                            <option value="Proyecto puntual">Proyecto puntual.</option>
+                            <option value="Ambos">Ambos.</option>
+                        </select>
+                    </div>
+                    <div class="row">
+                        <label>¿Con cuantos empleados cuenta tu empresa?</label>
+                        <select class="browser-default" id="selectNemployees"  required="" aria-required="true">
+                            <option value="" disabled selected>Seleccione una opción</option>
+                            <option value="0-10">0-10</option>
+                            <option value="11-50">11-50</option>
+                            <option value="51-100">51-100</option>
+                            <option value="100+">100+</option>
+                        </select>
+                    </div>
+                    <div class="row">
+                        <label>Si cuentas con un equipo de ingeniería actual, ¿Cuál es el tamaño de su equipo de ingeniería? </label>
+                        <select class="browser-default" id="selectSize"  required="" aria-required="true">
+                            <option value="" disabled selected>Seleccione una opción</option>
+                            <option value="0-10">0-10</option>
+                            <option value="11-50">11-50</option>
+                            <option value="51-100">51-100</option>
+                            <option value="100+">100+</option>
+                        </select>
+                    </div>
+                    <div class="row">
+                        <label>¿Trabajan miembros del equipo en más de una ubicación?</label>
+                        <select class="browser-default" id="selectUbication" required="" aria-required="true">
+                            <option value="" disabled selected>Seleccione una opción</option>
+                            <option value="Sí">Sí</option>
+                            <option value="No, pero contratando activamente a distancia">No, pero contratando activamente a distancia</option>
+                            <option value="No, pero es curioso saber más">No, pero es curioso saber más</option>
+                            <option value="No, escéptico de que los trabajos remotos">No, escéptico de que los trabajos remotos</option>
+                        </select>
+                    </div>
+                    <div class="row">
+                        <label>¿Dónde están ubicados?</label>
+                        <select class="browser-default" id="selectCountry" required="" aria-required="true">
+                            <option value="" disabled selected>Seleccione una opción</option>
+                            <option value="Argentina">Argentina</option>
+                            <option value="España">España</option>
+                            <option value="México">México</option>
+                            <option value="Guatemala">Guatemala</option>
+                            <option value="Honduras">Honduras</option>
+                            <option value="El Salvador">El Salvador</option>
+                            <option value="Venezuela">Venezuela</option>
+                            <option value="Colombia">Colombia</option>
+                            <option value="Cuba">Cuba</option>
+                            <option value="Bolivia">Bolivia</option>
+                            <option value="Perú">Perú</option>
+                            <option value="Ecuador">Ecuador</option>
+                            <option value="Paraguay">Paraguay</option>
+                            <option value="Uruguay">Uruguay</option>
+                            <option value="Chile">Chile</option>
+                            <option value="España">España</option>
+                            <option value="Francia">Francia</option>
+                            <option value="Italia">Italia</option>
+                            <option value="Suiza">Suiza</option>
+                            <option value="Alemania">Alemania</option>
+                            <option value="Holanda">Holanda</option>
+                            <option value="Polonia">Polonia</option>
+                            <option value="Grecia">Grecia</option>
+                        </select>
+                    </div>
+                    <div>
                         <div class="row">
                             <div class="input-field col s12">
-                                <input id="name" type="text" class="validate">
-                                <label for="name" data-error="wrong">Nombres</label>
+                                <input id="name" type="text" class="validate" required="" aria-required="true">
+                                <label for="name" data-error="Error">Nombres</label>
                             </div>
                         </div>
-                    </form>
-                    <form class="col s12">
                         <div class="row">
                             <div class="input-field col s12">
-                                <input id="lastname" type="text" class="validate">
-                                <label for="lastname" data-error="wrong">Apellidos</label>
+                                <input id="lastname" type="text" class="validate" required="" aria-required="true">
+                                <label for="lastname" data-error="Error">Apellidos</label>
                             </div>
                         </div>
-                    </form>
-                    <form class="col s12">
                         <div class="row">
                             <div class="input-field col s12">
-                                <input id="email" type="email" class="validate">
-                                <label for="email" data-error="wrong">Email</label>
+                                <input id="email" type="email" class="validate" required="" aria-required="true">
+                                <label for="email" data-error="Error">Email</label>
                             </div>
                         </div>
-                    </form>
-                    <form class="col s12">
+
+
                         <div class="row">
                             <div class="input-field col s12">
-                                <input id="company" type="text" class="validate">
-                                <label for="company" data-error="wrong">Empresa</label>
+                                <input id="company" type="text" class="validate" required="" aria-required="true">
+                                <label for="company" data-error="Error">Empresa</label>
                             </div>
                         </div>
-                    </form>
-                    <form class="col s12">
+
+
                         <div class="row">
                             <div class="input-field col s12">
-                                <input id="wichTecnology" type="text" class="validate">
-                                <label for="wichTecnology" data-error="wrong">Qué tecnologías adicionales necesitas que el desarrollador conozca?</label>
+                                <input id="wichTecnology" type="text" class="validate" required="" aria-required="true">
+                                <label for="wichTecnology" data-error="Error">Qué tecnologías adicionales necesitas que el desarrollador conozca?</label>
                             </div>
                         </div>
-                    </form>
-                    <form class="col s12">
+
+
                         <div class="row">
                             <div class="input-field col s12">
-                                <input id="needs" type="text" class="validate">
-                                <label for="needs" data-error="wrong">¿Hay algo más que nos ayude a entender tus necesidades?</label>
+                                <input id="needs" type="text" class="validate" required="" aria-required="true">
+                                <label for="needs" data-error="Error">¿Hay algo más que nos ayude a entender tus necesidades?</label>
                             </div>
                         </div>
-                    </form>
-                    <form class="col s12">
+
+
                         <div class="row">
                             <div class="input-field col s12">
-                                <input id="salary" type="text" class="validate">
-                                <label for="salary" data-error="wrong">¿Cual es el rango salarial previsto?</label>
+                                <input id="salary" type="text" class="validate" required="" aria-required="true">
+                                <label for="salary" data-error="Error">¿Cual es el rango salarial previsto?</label>
                             </div>
                         </div>
-                    </form>
-                    <form class="col s12">
+
+
                         <div class="row">
                             <div class="input-field col s12">
-                                <input id="benefits" type="text" class="validate">
-                                <label for="benefits" data-error="wrong">¿Que beneficios podrá acceder el desarrollador en su empresa?</label>
+                                <input id="benefits" type="text" class="validate" required="" aria-required="true">
+                                <label for="benefits" data-error="Error">¿Que beneficios podrá acceder el desarrollador en su empresa?</label>
                             </div>
                         </div>
-                    </form>
-                </div>
-                <div class="center">
-                    <button id="sendInformationButton" class="btn " type="submit">Envíar su solicitud</button>
-                </div>
+
+                    </div>
+                    <div class="center">
+                        <button id="sendInformationButton" class="btn " type="submit">Envíar su solicitud</button>
+                    </div>
+                </form>
             </div>
         </div>
     </section>
+
     <!--Footer-->
     <footer id="contact" style="background-color: #26a69a" class="page-footer scrollspy">
         <div class="container">

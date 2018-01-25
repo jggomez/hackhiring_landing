@@ -18,8 +18,11 @@ $(() => {
         let needs = $("#needs").val();
         let salary = $("#salary").val();
         let benefits = $("#benefits").val();
-            let requestDev = new RequestDeveloper();
 
+        if (time!=null & technologyDev != null & resource != null & nemployees != null & size != null
+            & ubication != null & country != null & name != "" & lastname != "" & email != "" & company != ""
+            & wichTecnology != "" & needs != "" & salary != "" & benefits != "") {
+                let requestDev = new RequestDeveloper();
             requestDev.save({
                 time,
                 technologyDev,
@@ -37,5 +40,10 @@ $(() => {
                 salary,
                 benefits
             });
+            document.getElementById("formulary").reset();
+            return false;
         }
+        
+        
+    }
 });

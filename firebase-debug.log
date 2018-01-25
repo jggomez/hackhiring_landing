@@ -1,0 +1,60 @@
+[debug] [2018-01-25T08:22:16.177Z] ----------------------------------------------------------------------
+[debug] [2018-01-25T08:22:16.183Z] Command:       D:\NodeJS\node.exe C:\Users\Rodolhan\AppData\Roaming\npm\node_modules\firebase-tools\bin\firebase deploy
+[debug] [2018-01-25T08:22:16.183Z] CLI Version:   3.16.0
+[debug] [2018-01-25T08:22:16.183Z] Platform:      win32
+[debug] [2018-01-25T08:22:16.184Z] Node Version:  v8.9.3
+[debug] [2018-01-25T08:22:16.186Z] Time:          Thu Jan 25 2018 03:22:16 GMT-0500 (Hora est. Pacífico, Sudamérica)
+[debug] [2018-01-25T08:22:16.186Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-01-25T08:22:16.256Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-01-25T08:22:16.257Z] > authorizing via signed-in user
+[debug] [2018-01-25T08:22:16.263Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2018-01-25T08:22:16.273Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ { refresh_token: '1/v3YXVn91fz_MTBaTzn2iDIHFONJEK47aBaW0vF40B3U',
+  client_id: '563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com',
+  client_secret: 'j9iVZfS8kkCEFUPaAeJV0sAi',
+  grant_type: 'refresh_token',
+  scope: 'email https://www.googleapis.com/auth/cloud-platform https://www.googleapis.com/auth/cloudplatformprojects.readonly https://www.googleapis.com/auth/firebase openid' } 
+ Thu Jan 25 2018 03:22:16 GMT-0500 (Hora est. Pacífico, Sudamérica)
+[debug] [2018-01-25T08:22:16.927Z] <<< HTTP RESPONSE 200
+[debug] [2018-01-25T08:22:16.942Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/hackhiring  
+  
+ Thu Jan 25 2018 03:22:16 GMT-0500 (Hora est. Pacífico, Sudamérica)
+[debug] [2018-01-25T08:22:17.871Z] <<< HTTP RESPONSE 200
+[debug] [2018-01-25T08:22:17.872Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/hackhiring/tokens  
+  
+ Thu Jan 25 2018 03:22:17 GMT-0500 (Hora est. Pacífico, Sudamérica)
+[debug] [2018-01-25T08:22:18.485Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Deploying to 'hackhiring'...
+[info] 
+[info] i  deploying database, storage, hosting
+[info] i  database: checking rules syntax...
+[debug] [2018-01-25T08:22:19.413Z] >>> HTTP REQUEST PUT https://hackhiring.firebaseio.com/.settings/rules.json?dryRun=true  
+ {
+  "rules": {
+    ".read": "auth != null",
+    ".write": "auth != null"
+  }
+}
+ 
+ Thu Jan 25 2018 03:22:19 GMT-0500 (Hora est. Pacífico, Sudamérica)
+[debug] [2018-01-25T08:22:20.138Z] <<< HTTP RESPONSE 200
+[info] +  database: rules syntax for database hackhiring is valid
+[debug] [2018-01-25T08:22:20.142Z] >>> HTTP REQUEST GET https://appengine.googleapis.com/v1/apps/hackhiring  
+  
+ Thu Jan 25 2018 03:22:20 GMT-0500 (Hora est. Pacífico, Sudamérica)
+[debug] [2018-01-25T08:22:21.181Z] <<< HTTP RESPONSE 200
+[info] i  storage: checking storage.rules for compilation errors...
+[debug] [2018-01-25T08:22:21.185Z] >>> HTTP REQUEST POST https://firebaserules.googleapis.com/v1/projects/hackhiring:test  
+ { source: { files: [ [Object] ] } } 
+ Thu Jan 25 2018 03:22:21 GMT-0500 (Hora est. Pacífico, Sudamérica)
+[debug] [2018-01-25T08:22:21.648Z] <<< HTTP RESPONSE 200
+[info] +  storage: rules file storage.rules compiled successfully
+[info] i  storage: uploading rules storage.rules...
+[debug] [2018-01-25T08:22:21.654Z] >>> HTTP REQUEST POST https://firebaserules.googleapis.com/v1/projects/hackhiring/rulesets  
+ { source: { files: [ [Object] ] } } 
+ Thu Jan 25 2018 03:22:21 GMT-0500 (Hora est. Pacífico, Sudamérica)
+[debug] [2018-01-25T08:22:22.213Z] <<< HTTP RESPONSE 200
+[debug] [2018-01-25T08:22:22.213Z] [rules] created ruleset projects/hackhiring/rulesets/1bd4d003-283e-4842-aa4a-59b9192de094
+[info] i  hosting: preparing public directory for upload...
